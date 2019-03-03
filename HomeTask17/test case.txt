@@ -1,0 +1,35 @@
+﻿1.	Написать позитивный тест-кейс на логин
+форма логина. Вход в личный кабинет
+Предусловие: перейти на mail.ru
+Шаги:
+	1. В поле с xpath .//input[@id="mailbox:login"] ввести имя пользователя (anastasiyakibisova)
+	2. Вполе с xpath .//input[@id="mailbox:password"] ввести пороль (2h2ct2ciy223)
+	3. Нажать кнопку с xpath .//input[@class="o-control"]
+Ожидаемый результат: в правом верхнем углу появился элемент с xpath .//a[@id="PH_logoutLink"]
+2.	Написать негативный тест-кейс на логин
+форма логина. Вход в личный кабинет
+Предусловие: перейти на mail.ru
+Шаги:
+	1. В поле с xpath .//input[@id="mailbox:login"] ввести имя пользователя (anastasiyakibisova)
+	2. Вполе с xpath .//input[@id="mailbox:password"] ввести пороль (123)
+	3. Нажать кнопку с xpath .//input[@class="o-control"]
+Ожидаемый результат: появился элемент с xpath .//div[@id="mailbox:error"]
+3.	Написать тест-кейс на проверку отправки сообщения
+форма отправки письма. Отправка письма
+Предусловие: быть успешно залогиненым в аккаунте (смотри тест-кейс 1)
+Шаги:
+	1. Нажать кнопку с xpath (.//span[@class="b-toolbar__btn__text b-toolbar__btn__text_pad"])[1]
+	2. Вполе с xpath .//textarea[@tabindex="4"] ввести адресс (anastasiyakibisova@mail.ru)
+	3. Вполе с xpath .//input[@class="b-input"] ввести тему (Тема)
+	4. Вполе с xpath .//body[@id="tinymce"] ввести текст (Текст)
+	5. Нажать кнопку с xpath (.//span[@class="b-toolbar__btn__text"])[1]
+Ожидаемый результат: появился элемент с xpath.//div[@class="message-sent__title"]
+4.	Написать тест-кейс на проверку удаления сообщения
+форма удаление письма
+Предусловие: быть успешно залогиненым в аккаунте (смотри тест-кейс 1)
+Шаги:
+	1. В поле с xpath (.//div[@data-bem="b-checkbox"])[3]
+	2. Нажать на кнопку с xpath (.//span[@class="b-toolbar__btn__text b-toolbar__btn__text_pad"])[2]
+Ожидаемый результат: появился элемент с xpath .//span[@class="js-txt _js-title notify-message__title__text notify-message__title__text_ok"]
+
+
