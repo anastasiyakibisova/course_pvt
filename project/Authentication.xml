@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Refs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Schema.xsd">
+	<Authentication>
+		<Site id="1">
+			<Name>https://mail.ru/</Name>
+			<Login>anastasiyakibisova</Login>
+			<Password>7896791qaz</Password>
+		</Site>
+		<Site id="2">
+			<Name>https://vk.com</Name>
+			<Login>***********</Login>
+			<Password>*********</Password>
+		</Site>
+	</Authentication>
+</Refs>
