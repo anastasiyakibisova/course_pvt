@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Annotations">
+		<parameter name="username" value="anastasiyakibisava@gmail.com"  />
+		<parameter name="password" value="547896321zxc"  />
+		<classes>
+			<class name="groupid.gmail.gmailTest" />
+		</classes>
+	</test> <!-- Annotations -->
+</suite> <!-- Suite -->
